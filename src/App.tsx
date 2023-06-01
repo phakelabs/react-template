@@ -2,16 +2,11 @@ import { useRoutes } from 'react-router-dom'
 
 import routes from './routes'
 
-function App() {
+export default function App() {
   const rootRoutes = useRoutes(routes)
-
   return (
     <>
-      <main>
-        {rootRoutes}
-      </main>
+      <main>{rootRoutes}</main>
     </>
   )
 }
-
-export default App
